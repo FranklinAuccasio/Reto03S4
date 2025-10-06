@@ -7,37 +7,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero-container">
+  <header class="header-container">
+
     <div class="logo-img">
-      <img src="images/logo.png" alt="logo-catering">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo-catering">
+      </a>
     </div>
-    <div class="list">
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ACERCA DE</a></li>
-          <li><a href="#">SERVICIOS</a></li>
-          <li><a href="#">PAQUETES PERSONALIZADOS</a></li>
+
+      <nav class="list">
+        <ul class="nav-list">
+          <li><a href="#" class="option">HOME</a></li>
+          <li><a href="#" class="option">ACERCA DE</a></li>
+          <li><a href="#" class="option">SERVICIOS</a></li>
+          <li><a href="#" class="option">PAQUETES PERSONALIZADOS</a></li>
         </ul>
-        <div class="contact">
-          <ul>
-            <li><a href="#">CONTACTO</a></li>
-          </ul>
+        <div class="contacto">
+          <button class="btn-contacto">CONTACTO</button>
         </div>
       </nav>
-    </div>
-    <div class="hero">
-      <div class="hero-img">
-        <img src="images/buffet-1.jpg" alt="">
-        <h1 class="hero-img-text">SERVICIOS DE CATERING PARA TODA OCASION</h1>
-      </div>
-    </div>
   </header>
+
+  <section class="hero">
+      <div class="hero-img">
+        <img src="images/buffet-1.jpg" class="img" alt="">
+      </div>
+        <div class="hero-text">
+          <h1 class="hero-img-text">SERVICIOS DE CATERING PARA TODA OCASION</h1>
+        </div>
+  </section>
 
   <main class="main-container">
     <section class="quienes-somos">
       <h2 class="somos-title">QUIENES SOMOS</h2>
-      <hr>
       <p class="somos-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Tempore esse omnis itaque iure quis deserunt numquam quas maiores!
@@ -52,8 +54,9 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Tempore esse omnis itaque iure quis deserunt numquam quas maiores!
       </p>
+
       <div class="somos-img">
-        <img src="images/buffet-section.jpg" alt="quienes somos">
+        <img src="images/buffet-section.jpg" class="" alt="quienes somos">
         <h2 class="somos-img-text">Proveemos soluciones premiun de catering para eventos formales o casuales.</h2>
       </div>
     </section>
@@ -61,21 +64,22 @@
     <section class="nuestros-servicios">
       <h2 class="servicios-title">NUESTROS SERVICIOS</h2>
       <hr>
+
       <div class="servicios-img">
         <div class="servicio1">
           <img src="images/wedding.jpg" alt="bodas">
+          <span class="servicios-span">Bodas</span>
         </div>
-        <span class="servicios-span">Bodas</span>
-      </div>
-      <div class="servicio2">
-          <img src="images/woman-flowers-holidays-girl.jpg" alt="eventos corporativos">
+
+        <div class="servicio2">
+            <img src="images/woman-flowers-holidays-girl.jpg" alt="eventos corporativos">
+            <span class="servicios-span">Eventos corporativos</span>
         </div>
-        <span class="servicios-span">Eventos corporativos</span>
-      </div>
-      <div class="servicio3">
-          <img src="images/hands-summer-party-colorful.jpg" alt="reuniones familiares">
+
+        <div class="servicio3">
+            <img src="images/hands-summer-party-colorful.jpg" alt="reuniones familiares">
+            <span class="servicios-span">Reuniones familiares</span>
         </div>
-        <span class="servicios-span">Reuniones familiares</span>
       </div>
     </section>
 
@@ -86,7 +90,7 @@
         Contamos con paquetes personalizados a la medida de tus necesidades
       </p>
       <div class="paquetes-table">
-        <div>
+        <div class="card">
           <h3 class="silver">Silver</h3>
           <h4 class="price">$15.99 / persona</h4>
           <ul class="plan">
@@ -97,7 +101,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="card">
           <h3 class="pack">Gold</h3>
           <h4 class="price">$19.99 / persona</h4>
           <ul class="plan">
@@ -110,7 +114,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="card">
           <h3 class="pack">Platinum</h3>
           <h4 class="price">$29.99 / persona</h4>
           <ul class="plan">
@@ -126,8 +130,9 @@
         </div>
       </div>
     </section>
+  </main>
 
-    <footer class="footer-container">
+  <footer class="footer-container">
       <section class="contacto">
         <h2 class="contacto-title">CONTACTO</h2>
         <hr>
@@ -154,6 +159,6 @@
       </section>
 
     </footer>
-  </main>
+
 </body>
 </html>
